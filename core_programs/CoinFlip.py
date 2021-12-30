@@ -18,16 +18,18 @@ import random
 headCount = 0
 tailCount = 1
 count = int(input('How Many Time You Wants to Flip Coin'))
-for x in range (count) :
-    flip = random.random()
-if flip < 0.5 :
-    print('Head Occures')
-    headCount = headCount + 1
+if count > 0:
+    for x in range (count):
+        flip = random.random()
+        if flip < 0.5 :
+             print('Head Occures')
+             headCount = headCount + 1
+        else:
+             print('Tails Occures')
+             tailCount = tailCount + 1
+    headPercentage = int(headCount / count * 100)
+    tailPercentage = 100 - headPercentage
+    print('Head Percentage is: ' + str(headPercentage))
+    print('Tail Percentage is: ' + str(tailPercentage))
 else:
-    print('Tails Occures')
-    tailCount = tailCount + 1
-
-headPercentage = int(headCount / count * 100)
-tailPercentage = 100 - headPercentage
-print('Head Percentage is: ' + str(headPercentage))
-print('Tail Percentage is: ' + str(tailPercentage))
+    print('Provide Correct Integer of Count')
