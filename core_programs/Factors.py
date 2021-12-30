@@ -14,18 +14,27 @@ Parameter:
 Return:
       Prime Factor of a Number
 """
-number = int(input('Enter the Number:' ))
-temp = number
-factors =[]
-while temp != 1:
-    for i in range (2, number):
-        if temp % i == 0:
-            while temp % i == 0:
-                factors.append(i)
-                temp = temp/i
-            temp=1
+number = int(input('Enter the Number to Check its Prime Factors:' ))
+i = 2
+while (i<=number):
+    if (number%i==0):
+        print(i, end=' ')
+        number = number/i
+    else:
+        i += 1
 
-if len(factors) == 0:
-    print(str(number) + ' is a Prime Number')
-else:
-    print(factors)  
+
+# temp = number
+# factors =[]
+# while temp != 1:
+#     for i in range (2, number):
+#         if temp % i == 0:
+#             while temp % i == 0:
+#                 factors.append(i)
+#                 temp = temp/i
+#             temp=1
+
+# if len(factors) == 0:
+#     print(str(number) + ' is a Prime Number')
+# else:
+#     print(factors)  
