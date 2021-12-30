@@ -5,7 +5,6 @@
 @Last Modified time: 2021-12-29 
 @Title : Take User Input and Replace it with String
 '''
-
 """
 Description:
     Function description in depth
@@ -19,7 +18,7 @@ isCorrect = True
 while isCorrect == True :
     name = input('Provide Your Name: ' )
     if  len(name) >= 3 : 
-        print ('Hello' + name + ', How Are You')
+        print ('Hello ' + name + ', How Are You')
         isCorrect = False
     else :
-        print ('Please Provide Correct Name having 3 Characters Only')
+        print ('Please Provide Correct Name having More the 3 Charecters')
