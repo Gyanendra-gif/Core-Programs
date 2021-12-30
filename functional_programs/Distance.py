@@ -14,6 +14,7 @@ Parameter:
 Return:
       Distance of the Co-ordinate from origin
 """
+
 import math
 x = int(input('Enter the X Co-ordinate: '))
 y = int(input('Enter the y Co-ordinate: '))
