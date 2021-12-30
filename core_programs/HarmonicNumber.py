@@ -3,7 +3,7 @@
 @Date: 2021-12-29
 @Last Modified by: Gyanendra
 @Last Modified time: 2021-12-29 
-@Title : Take User Input and Replace it with String
+@Title : Take User Input And Find Nth Harmonic Sum
 '''
 
 """
@@ -12,13 +12,14 @@ Description:
 Parameter:
       Taking Input From User as Harmonic Value N  
 Return:
-      Nth Harmonic Number 
+     Sum of Nth Harmonic Number 
 """
 
-from fractions import Fraction
-number = int(input('Enter the Harmonic Value as number: '))
-harmonic = 0
-for i in range (1, number + 1) :
-    harmonic = harmonic + (1/i)
-
-print('Harmonic Number is: ' + str(Fraction(harmonic).limit_denominator(100)))
+number = int(input('Enter the Harmonic Value as Number: '))
+if number != 0:
+    harmonic = 0
+    for i in range (1, number + 1) :
+        sum = harmonic + (1/i)
+    print('Harmonic Number is: ', sum)
+else:
+    print('Provide the Correct Number Should not Equal to 0')    
