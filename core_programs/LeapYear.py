@@ -14,11 +14,11 @@ Parameter:
 Return:
       Leap Year or Non Leap Year
 """
-year = input('Enter the Year to Check and it should be in four digit: ')
-while (len(year) == 4):
-    if int(year) % 4 == 0 and int(year) % 100 != 0 or int(year) % 400 == 0 :
-        print('Year in a Leap Year', int(year))
+year = int(input('Enter the Year to Check and it should be in four digit: '))
+while (year > 999 and year < 10000):
+    if(year) % 4 == 0 and(year) % 100 != 0 or(year) % 400 == 0 :
+        print('Year in a Leap Year',(year))
         break
     else: 
-        print('Year is Not a Leap Year', int(year))
+        print('Year is Not a Leap Year',(year))
         break    
