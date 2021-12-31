@@ -29,7 +29,7 @@ if count > 0:
              tailCount = tailCount + 1
     headPercentage = int(headCount / count * 100)
     tailPercentage = 100 - headPercentage
-    print('Head Percentage is: ' + str(headPercentage))
-    print('Tail Percentage is: ' + str(tailPercentage))
+    print('Head Percentage is: ', headPercentage)
+    print('Tail Percentage is: ', tailPercentage)
 else:
     print('Provide Correct Integer of Count')
