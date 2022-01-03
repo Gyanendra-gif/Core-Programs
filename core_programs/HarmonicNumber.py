@@ -16,10 +16,11 @@ Return:
 """
 
 number = int(input('Enter the Harmonic Value as Number: '))
-if number != 0:
-    harmonic = 0
-    for i in range (1, number + 1) :
-        sum = harmonic + (1/i)
-    print('Harmonic Number is: ', sum)
-else:
-    print('Provide the Correct Number Should not Equal to 0')    
+while(number > 0):
+    if number != 0:
+        harmonic = 0
+        for i in range (1, number + 1) :
+            sum = harmonic + (1/i)
+        print('Harmonic Number is: ', sum)
+    else:
+        print('Provide the Correct Number Should not Equal to 0')    
