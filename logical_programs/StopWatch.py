@@ -9,14 +9,14 @@
 import time
 
 try:
-    def fuction_inputString(string):
+    def fuction_inputString(string):   # This Function Will Take Input as String and will return String
         while True:
             try:
                 return input(string)
             except Exception as e:
                 print(e)             
 
-    def function_startStopWatch():
+    def function_startStopWatch():     # This Function will take input as start and return the start time     
         while True:                  
             choice = 'Enter start to Begin StopWatch: '
             if fuction_inputString(choice) == 'start':
@@ -24,7 +24,7 @@ try:
             else:
                 print('Provide Correct Input to Start Watch')                
 
-    def function_stopStopWatch(): 
+    def function_stopStopWatch():      # This Function will take input as stop and return the stop time 
         while True:            
             choice = 'Enter stop to End StopWatch: '
             if fuction_inputString(choice) == 'stop':
