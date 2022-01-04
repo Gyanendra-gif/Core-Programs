@@ -78,7 +78,7 @@ class AddressBook:
 
         def display_contact(self):
                 for i in ContactList:
-                        print(i, "\n")                         
+                        print(i)                         
 
 addressBook = AddressBook()
 if __name__ == "__main__":
