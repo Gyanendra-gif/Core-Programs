@@ -2,64 +2,68 @@
 @Author: Gyanendra
 @Date: 04/01/2021 
 @Last Modified by: Gyanendra
-@Last Modified time: 04/01/2021 
+@Last Modified time: 05/01/2021 
 @Title : Gyanendra
 """
       
 import os
-def read_data():
+
+def read_data(filePath):
     """
 Description:
-    Function Read Data From Json File
+    Function Read Data From File
 Parameter:
-      None
+      File Path 
 Return:
-     Read Data From Json File 
+     Read Data From File 
 """
-    f = open("Core-Programs\OOPS\Inventory Data Management\Files\Demo.json", "r")
-    print(f.read())
+    f = open(filePath, "r")
+    result = print(f.read())
     f.close
-
-def write_data():
+    # return result
+    
+def write_data(filePath):
     """
 Description:
-    Function Add Data in Json File
+    Function Add Data in  File
+Parameter:
+    Input Data From User
+Return:
+     Will Add Data into File
+"""
+    value = input("Enter the Data to Add into File: ")
+    f = open(filePath, "a")
+    result = f.write(value)
+    f.close()
+    return result
+
+def overWrite_data(filePath):
+    """
+Description:
+    Function Over Write Data in  File
 Parameter:
     Input Data From User
 Return:
      Will Add Data into Json 
 """
-    value = input("Enter the Data to Add into Json File: ")
-    f = open("Core-Programs\OOPS\Inventory Data Management\Files\Demo.json", "a")
-    f.write(value)
+    value = input("Enter More Data to Add into File: ")
+    f = open(filePath, "w")
+    result = f.write(value)
     f.close()
+    return result
 
-def overWrite_data():
+def delete_data(filePath):
     """
 Description:
-    Function Over Write Data in Json File
-Parameter:
-    Input Data From User
-Return:
-     Will Add Data into Json 
-"""
-    value = input("Enter More Data to Add into Json File: ")
-    f = open("E:\Python Workspace\Core-Programs\OOPS\Inventory Data Management\demo.txt", "w")
-    f.write(value)
-    f.close()
-
-def delete_data():
-    """
-Description:
-    Function Will Delete Json File 
+    Function Will Delete  File 
 Parameter:
     Full Path of The File
 Return:
      None
 """
-    os.remove("Core-Programs\OOPS\Inventory Data Management\Files\Demo.json")
+    os.remove(filePath)
 
-def create_data():
+def create_file(fileName):
     """
 Description:
     Function Will Create Empty Text File
@@ -68,22 +72,34 @@ Parameter:
 Return:
      Will Create Empty File
 """
-    f = open("file.txt", "x")
+    f = open(fileName, "x")
     f.close
 
+def operation(choice):
+    filePath = input("Enter the Path of The File: ")
+    switcher = {
+        1: read_data(filePath),
+        2: write_data(filePath),
+        3: overWrite_data(filePath),
+        4: delete_data(filePath),       
+    }
+    switcher.get(choice, "Option Not Available")
+      
 if __name__ == "__main__":
-    choice = int(input("Enter Your Choice to Perform Operation Press: \n 1: To Read Data, \n 2: To Add Data, \n 3: To Over Write Data, \n 4: To Delete File, \n 5: To Create Empty File, \n ->"))
-    if choice == 1:
-        result = read_data()
-        print("File got Read", result)
-    elif choice == 2:
-        result = write_data()
-        print("Data Added Successfully ", result)
-    elif choice == 3:
-        result = delete_data()
-        print("File Deleted Successfully ")
-    elif choice == 4:
-        result = create_data()
-        print("File Created Successfully ")
-    else:
-        print("Provide Correct Option to Perform Operation")            
+    condition = True
+    while (condition == True):
+        choice = int(input("Enter Your Choice to Perform Operation Press:"
+                                                        + "\n 1: To Read Data"
+                                                        + "\n 2: To Write Data" 
+                                                        + "\n 3: To Over Write Data"
+                                                        + "\n 4: To Delete File: "))
+        operation(choice)
+        userChoice = int(input("Press 0 to Continue Program and 1 to Close Program"))
+        if (userChoice == 1):
+            condition = False
+
+
+
+
+
+    
