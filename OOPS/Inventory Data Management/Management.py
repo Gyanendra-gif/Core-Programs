@@ -11,7 +11,7 @@ import os
 def read_data(filePath):
     """
 Description:
-    Function Read Data From File
+    Function is Used to Read the Data from the file with having these parameters
 Parameter:
       File Path 
 Return:
@@ -20,12 +20,12 @@ Return:
     f = open(filePath, "r")
     result = print(f.read())
     f.close
-    # return result
+    return result
     
 def write_data(filePath):
     """
 Description:
-    Function Add Data in  File
+    Function is Used to Add the Data from the file with having these parameters
 Parameter:
     Input Data From User
 Return:
@@ -40,11 +40,11 @@ Return:
 def overWrite_data(filePath):
     """
 Description:
-    Function Over Write Data in  File
+    Function is Used to Write the Data from the file with having these parameters
 Parameter:
     Input Data From User
 Return:
-     Will Add Data into Json 
+     Will Add Data into File 
 """
     value = input("Enter More Data to Add into File: ")
     f = open(filePath, "w")
@@ -55,7 +55,7 @@ Return:
 def delete_data(filePath):
     """
 Description:
-    Function Will Delete  File 
+    Function is Used to Delete the file with having these parameters
 Parameter:
     Full Path of The File
 Return:
@@ -76,6 +76,14 @@ Return:
     f.close
 
 def operation(choice):
+    """
+Description:
+    Function Will Perform Operation according to User 
+Parameter:
+    File Path
+Return:
+     None
+"""
     filePath = input("Enter the Path of The File: ")
     switcher = {
         1: read_data(filePath),
