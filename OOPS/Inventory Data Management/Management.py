@@ -2,7 +2,7 @@
 @Author: Gyanendra
 @Date: 04/01/2021 
 @Last Modified by: Gyanendra
-@Last Modified time: 05/01/2021 
+@Last Modified time: 06/01/2021 
 @Title : Gyanendra
 """
       
@@ -13,14 +13,13 @@ def read_data(filePath):
 Description:
     Function is Used to Read the Data from the file with having these parameters
 Parameter:
-      File Path 
+    File Path 
 Return:
-     Read Data From File 
+    Read Data From File 
 """
     f = open(filePath, "r")
-    result = print(f.read())
-    f.close
-    return result
+    print(f.read())
+    f.close 
     
 def write_data(filePath):
     """
@@ -29,7 +28,7 @@ Description:
 Parameter:
     Input Data From User
 Return:
-     Will Add Data into File
+    Will Add Data into File
 """
     value = input("Enter the Data to Add into File: ")
     f = open(filePath, "a")
@@ -44,7 +43,7 @@ Description:
 Parameter:
     Input Data From User
 Return:
-     Will Add Data into File 
+    Will Add Data into File 
 """
     value = input("Enter More Data to Add into File: ")
     f = open(filePath, "w")
@@ -59,7 +58,7 @@ Description:
 Parameter:
     Full Path of The File
 Return:
-     None
+    None
 """
     os.remove(filePath)
 
@@ -70,41 +69,50 @@ Description:
 Parameter:
     File Name
 Return:
-     Will Create Empty File
+    Will Create Empty File
 """
-    f = open(fileName, "x")
-    f.close
-
-def operation(choice):
-    """
-Description:
-    Function Will Perform Operation according to User 
-Parameter:
-    File Path
-Return:
-     None
-"""
-    filePath = input("Enter the Path of The File: ")
-    switcher = {
-        1: read_data(filePath),
-        2: write_data(filePath),
-        3: overWrite_data(filePath),
-        4: delete_data(filePath),       
-    }
-    switcher.get(choice, "Option Not Available")
+    try:
+        f = open(fileName, "x")
+        f.close
+    except Exception as e:
+        print(e)    
       
 if __name__ == "__main__":
-    condition = True
-    while (condition == True):
-        choice = int(input("Enter Your Choice to Perform Operation Press:"
+    condition = False
+    while (condition == False):
+        try:
+            
+            choice = int(input("Enter Your Choice to Perform Operation Press:"
                                                         + "\n 1: To Read Data"
                                                         + "\n 2: To Write Data" 
                                                         + "\n 3: To Over Write Data"
-                                                        + "\n 4: To Delete File: "))
-        operation(choice)
-        userChoice = int(input("Press 0 to Continue Program and 1 to Close Program"))
-        if (userChoice == 1):
-            condition = False
+                                                        + "\n 4: To Delete File"
+                                                        + "\n 5: To Create File: "))
+        
+            if (choice == 1):
+                filePath = input("Enter the Path of The File to Read Data: ")
+                read_data(filePath)
+            elif (choice == 2):
+                filePath = input("Enter the Path of The File to Write Data: ")
+                write_data(filePath)
+            elif (choice == 3):
+                filePath = input("Enter the Path of The File to Add More Data: ")
+                overWrite_data(filePath)
+            elif (choice == 4):
+                filePath = input("Enter the Path of The File to Remove File: ")
+                os.remove(filePath)
+            elif (choice == 5):
+                fileName = input("Enter the Name of File with Extension to Create Empty File: ")
+            else:
+                print("Enter the Opt. in range to execute the program")     
+                    
+            userChoice = int(input("Press 0 to Continue Program and 1 to Close Program: "))
+            if (userChoice == 1):
+                condition = True
+            break                
+
+        except ValueError:
+            print("Error! Enter the correct integer to excute program")            
 
 
 
