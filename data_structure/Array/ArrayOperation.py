@@ -34,7 +34,7 @@ def removeOccurence_array(number, element):
     count = 0
     for i in range(len(number)):
         if i == element:
-            result = number.remove(element)
+            number.remove(element)
             break
     print(number)   
 
