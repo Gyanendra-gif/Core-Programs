@@ -67,7 +67,6 @@ Description:
                 removeOccurence_array(number, element)
             else:
                 print('Provide Correct Input in Range')
-                
             userChoice = int(input('Press 0 to Continue the Program or 1 to stop the program: '))
             if (userChoice == 1):
                 condition = False    
