@@ -6,9 +6,7 @@
 @Title : Array in Python
 """
 from array import *
-
 # Array Creation
-# number = array("i", [])
 def create_array():
     number = array("i", [])
     element = int(input("Enter The Number of Elements to Add is Array: "))
