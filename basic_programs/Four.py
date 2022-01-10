@@ -18,9 +18,8 @@ Return:
 """
     year = int(input("Enter the Year: "))
     month = int(input("Enter the Month: "))
-    cal = print(calendar.month(year, month))
-    return cal
+    print("Here is the Calendar of given date: ", calendar.month(year, month))
+
 
 if __name__ == "__main__":
-    result = function_calendar()
-    print('Here is the Calender of the given Month: ', result)
+    function_calendar()
