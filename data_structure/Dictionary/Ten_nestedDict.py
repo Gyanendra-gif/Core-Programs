@@ -9,11 +9,11 @@
 def function_nested_dict(list):
     """
 Description:
-    Function is Used for Adding Data in Dictionary
+    Function is Used for Creating Nested Dictionary
 Parameter:
-    Dictionary name to add key and values in it
+    List
 Return:
-    Updated Dictionary
+    Updated Nested Dictionary
 """
     updated_dict = my_dict = {}
     for data in list:
