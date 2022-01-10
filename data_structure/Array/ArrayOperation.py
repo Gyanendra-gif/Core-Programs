@@ -14,7 +14,7 @@ def create_array():
         index = int(input("Enter Number at Index: "))
         number.append(index)
         print("Created Array is: ", number) 
-        return number       
+    return number       
 
 # Print Array
 def print_array(number):
