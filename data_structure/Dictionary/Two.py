@@ -21,7 +21,7 @@ Return:
         updated_dict.update(dic2)
         updated_dict.update(dic3)
     except TypeError:
-        return updated_dict
+        print("Error! Enter Correct Dictionary Type")
     else:
         return updated_dict
     
