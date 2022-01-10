@@ -10,9 +10,9 @@ import os
 def function_callExternal_method():
     """
 Description:
-    Function is Used for taking path of the file and check it exist or not in the system 
+    Function is Used for calling outer method after importing os module 
 Parameter:
-    Path of the file
+    None
 Return:
     None
 """
