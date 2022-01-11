@@ -26,4 +26,4 @@ def function_intersection_set(setOne, setTwo):
 sample_set_one = {'Black','Blue', 'Green', 'Yellow'}
 sample_set_two = {'Red', 'Pink', 'Orange', 'Blue','Black'}
 output = function_intersection_set(sample_set_one,sample_set_two)
-logging.debug("Here is the Updated Set is {} ".format(sample_set_one, sample_set_two ,output))  
+logging.debug("Here is the Updated Set is {} ".format(output))  
