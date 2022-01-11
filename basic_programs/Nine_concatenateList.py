@@ -8,14 +8,14 @@
 
 def function_concate_elements(list):
     """
-Description:
-    Function is Used for taking list as a parameter and print the symbol according to that 
-Parameter:
-    list
-Return:
-    Print the pattern according to list
-"""
-    data = ' '
+    Description:
+        Function is Used for taking list as a parameter and print in a string format
+    Parameter:
+        list
+    Return:
+        Print the pattern according to list
+    """
+    data = " "
     for element in list:
         data += str(element)
     return data
