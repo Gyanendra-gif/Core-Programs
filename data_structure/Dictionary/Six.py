@@ -8,13 +8,13 @@
 
 def string_to_dict(string):
     """
-Description:
-    Function is Used for Counting Letters From Sample String
-Parameter:
-    String to Count its Letters
-Return:
-    Dictionary with having letters in it
-"""
+    Description:
+        Function is Used for Counting Letters From Sample String
+    Parameter:
+        String to Count its Letters
+    Return:
+        Dictionary with having letters in it
+    """
     my_list = list(string)
     set_my_list = set(my_list)
     my_dict = {}
