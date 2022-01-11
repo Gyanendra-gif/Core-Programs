@@ -15,7 +15,7 @@ def function_add_set(set):
     Parameter:
         Sample Set
     Return:
-        None
+        Updated Set
     """
     user_input = input("Enter the Name to add in set ")
     result = set.add(user_input)
