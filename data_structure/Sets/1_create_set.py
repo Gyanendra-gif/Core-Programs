@@ -23,4 +23,5 @@ def function_create_set(list):
 sample_list = ["Tom", "Harry", "Sam"]
 result = function_create_set(sample_list)
 logging.debug("Created Sample Set is {}".format(sample_list, result))
+ 
   
