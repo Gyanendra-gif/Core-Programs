@@ -31,4 +31,4 @@ def function_smallest_list(list):
 if __name__ == "__main__":
     sample_list = ['abc', 'xyz', 'azc', '1221']
     result = function_smallest_list(sample_list)
-    logging.debug("Smallest item in list {} is {}".format(sample_list, result))
+    logging.debug("Number of item count in list {} is {}".format(sample_list, result))
