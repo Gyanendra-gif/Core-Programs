@@ -8,19 +8,18 @@
 import logging
 logging.basicConfig(level=logging.DEBUG)
 
-def function_union_set(setOne, setTwo):
+def function_union_set(setOne):
     """
     Description:
-        Function is Used for Clear a Set of two Sets
+        Function is Used for Clear a Set and as a return it will give none
     Parameter:
         Sample Set
     Return:
-        Updated Set
+        None
     """
     result = setOne.clear()
     return result
 
 sample_set_one = {'Black','Blue', 'Green', 'Yellow'}
-sample_set_two = {'Red', 'Pink', 'Orange', 'Blue','Black'}
-output = function_union_set(sample_set_one,sample_set_two)
-logging.debug("Here is the Clear Set is {} ".format(output))  
+output = function_union_set(sample_set_one)
+logging.debug("Set is Cleared Successfully {} ".format(output))  
