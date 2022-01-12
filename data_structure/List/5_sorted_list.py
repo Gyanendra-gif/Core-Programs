@@ -8,7 +8,7 @@
 import logging
 logging.basicConfig(level=logging.DEBUG)
 
-def function_smallest_list(list):
+def function_sorted_list(list):
     """
     Description:
         Function is Used for sorted list in increasing order by the last
@@ -29,5 +29,5 @@ def function_smallest_list(list):
 
 if __name__ == "__main__":
     sample_list = [(2, 5), (1, 2), (4, 4), (2, 3), (2, 1)]
-    result = function_smallest_list(sample_list)
+    result = function_sorted_list(sample_list)
     logging.debug("Items in Increasing Order of List {} is {}".format(sample_list, result))
