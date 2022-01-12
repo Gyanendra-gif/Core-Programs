@@ -11,7 +11,8 @@ logging.basicConfig(level=logging.DEBUG)
 def function_union_set(setOne, setTwo):
     """
     Description:
-        Function is Used for Difference of two Sets
+        Function is Used for Difference of two Sets. It will compare setOne to
+        setTwo and show the different item which is not in setTwo
     Parameter:
         Sample Set
     Return:
