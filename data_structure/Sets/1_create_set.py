@@ -20,8 +20,8 @@ def function_create_set(list):
     sample_set = set(list)
     return sample_set
 
-sample_list = ["Tom", "Harry", "Sam"]
-result = function_create_set(sample_list)
-logging.debug("Created Sample Set is {}".format(sample_list, result))
+demo_set = {"Tom", "Harry", "Sam"}
+result = function_create_set(demo_set)
+logging.debug("Created Sample Set is {}".format(demo_set, result))
  
   
