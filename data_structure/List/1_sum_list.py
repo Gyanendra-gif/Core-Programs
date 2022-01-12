@@ -11,7 +11,7 @@ logging.basicConfig(level=logging.DEBUG)
 def function_add_list(list):
     """
     Description:
-        Function is Used for Adding the items of List Sample Set
+        Function is Used for Adding the items of List 
     Parameter:
         Sample List
     Return:
