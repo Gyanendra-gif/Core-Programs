@@ -11,7 +11,7 @@ logging.basicConfig(level=logging.DEBUG)
 def function_remove_dataSet(set):
     """
     Description:
-        Function is Used for Removing Items from set
+        Function is Used for Removing Items from set if that is available in it
     Parameter:
         Sample Set
     Return:
