@@ -11,7 +11,8 @@ logging.basicConfig(level=logging.DEBUG)
 def function_union_set(setOne, setTwo):
     """
     Description:
-        Function is Used for Difference of two Sets
+        Function is Used for Symmetric Difference of two Sets and it will return all
+        elements except common one
     Parameter:
         Sample Set
     Return:
