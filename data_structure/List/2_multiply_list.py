@@ -17,11 +17,12 @@ def function_add_list(list):
     Return:
         Created Set
     """
-    count = 0
+    count = 1
     for item in list:
-        count = count *  item
+        count = count * item
     return count
 
-sample_list = [1,2,3,4,5,6,7]
-result = function_add_list(sample_list)
-logging.debug("Sum of all items in list {} is {}".format(sample_list, result))
+if __name__ == "__main__":
+    sample_list = [1,2,3,4,5,6,7]
+    result = function_add_list(sample_list)
+    logging.debug("Multiplication of all items in list {} is {}".format(sample_list, result))
