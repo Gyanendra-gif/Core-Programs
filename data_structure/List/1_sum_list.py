@@ -22,8 +22,9 @@ def function_add_list(list):
         count = count + item
     return count
 
-sample_list = [1,2,3,4,5,6,7]
-result = function_add_list(sample_list)
-logging.debug("Sum of all items in list {} is {}".format(sample_list, result))
+if __name__ == "__main__":
+    sample_list = [1,2,3,4,5,6,7]
+    result = function_add_list(sample_list)
+    logging.debug("Sum of all items in list {} is {}".format(sample_list, result))
  
   
