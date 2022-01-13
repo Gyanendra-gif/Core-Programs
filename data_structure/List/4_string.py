@@ -8,7 +8,7 @@
 import logging
 logging.basicConfig(level=logging.DEBUG)
 
-def function_smallest_list(list):
+def function_string_list(list):
     """
     Description:
         Function is Used for count the number of strings where the string length
@@ -30,5 +30,5 @@ def function_smallest_list(list):
 
 if __name__ == "__main__":
     sample_list = ['abc', 'xyz', 'azc', '1221']
-    result = function_smallest_list(sample_list)
+    result = function_string_list(sample_list)
     logging.debug("Number of item count in list {} is {}".format(sample_list, result))
