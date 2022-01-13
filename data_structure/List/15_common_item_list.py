@@ -6,7 +6,6 @@
 @Title : List in Python
 """
 import logging
-import  copy
 logging.basicConfig(level=logging.DEBUG)
 
 def function_find_common_item(listOne, listTwo):
