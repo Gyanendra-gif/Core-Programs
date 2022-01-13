@@ -13,9 +13,9 @@ def function_split_item(list):
     Description:
         Function is Used to split a list based on first character of word.
     Parameter:
-        Sample Two List
+        Sample List
     Return:
-        True or False
+        Values in Dictionary
     """
     my_dict = {}
     for i in list:
