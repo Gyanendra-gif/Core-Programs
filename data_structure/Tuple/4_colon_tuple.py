@@ -14,9 +14,9 @@ def function_colon_tuple():
     Description:
         Function is Used for to create the colon of a tuple.
     Parameter:
-        Sample List
+        Sample Tuple
     Return:
-        Created tuple
+        None
     """
     sample_tuple = (1,2,[5],6) 
     colon_tuple = copy.deepcopy(sample_tuple)
