@@ -11,7 +11,7 @@ logging.basicConfig(level=logging.DEBUG)
 def function_list_tuple(list):
     """
     Description:
-        Function is Used for to check whether an element exists within a tuple and return True or False
+        Function is Used to convert tuple from list 
     Parameter:
         Sample Tuple
     Return:
@@ -24,4 +24,3 @@ if __name__ == "__main__":
     sample_list = [1,2,3,4,5,6,7]
     result = function_list_tuple(sample_list)
     logging.debug("The Item in the List {} is Converted to tuple {}".format(sample_list, result))
-  
