@@ -11,7 +11,7 @@ logging.basicConfig(level=logging.DEBUG)
 def function_create_tuple(lst):
     """
     Description:
-        Function is Used for creating sample tuple 
+        Function is Used for creating sample tuple from the items of List 
     Parameter:
         Sample List
     Return:
