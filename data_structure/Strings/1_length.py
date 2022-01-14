@@ -11,11 +11,11 @@ import sys
 def function_length_string(str):
     """
     Description:
-        Function is Used for creating sample tuple from the items of List 
+        Function is Used for Counting the Character in String
     Parameter:
-        Sample List
+        Sample String
     Return:
-        Created tuple
+        Length of String
     """
     length = len(str) 
     return length
