@@ -5,7 +5,7 @@
 @Last Modified time: 14/01/2021 
 @Title : Tuple in Python
 """
-def function_create_tuple():
+def function_unpack_tuple():
     """
     Description:
         Function is Used for unpack a tuple in several variables.
@@ -19,6 +19,6 @@ def function_create_tuple():
     print(n1, n2, n3)
 
 if __name__ == "__main__":
-    function_create_tuple()
+    function_unpack_tuple()
  
   
