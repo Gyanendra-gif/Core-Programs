@@ -11,11 +11,11 @@ logging.basicConfig(level=logging.DEBUG)
 def function_repeated_tuple(tup):
     """
     Description:
-        Function is Used for to create the colon of a tuple.
+        Function is Used for to to find the repeated items of a tuple..
     Parameter:
         Sample Tuple
     Return:
-        None
+        Sample Set having repeated Number
     """
     new_tuple = set()
     for i in tup:
