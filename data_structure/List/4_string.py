@@ -18,17 +18,13 @@ def function_string_list(list):
     Return:
         Count
     """
-    temp = []
-    for i in list:
-        if (len(i) >+ 2):
-            temp.append(i[0] + i[-1])
-    for item in temp:
-        if temp.count(item) != 1:
-            return temp.count(item)
-        else:
-            return 'Nothing Available as per Requirement'
+    count = 0
+    for char in list:
+        if len(char) > 1 and char[0] == char[-1]:
+            count += 1
+    return count
 
 if __name__ == "__main__":
-    sample_list = ['abc', 'xyz', 'azc', '1221']
+    sample_list = ['abc', 'xyz', 'aba', '1221']
     result = function_string_list(sample_list)
     logging.debug("Number of item count in list {} is {}".format(sample_list, result))
