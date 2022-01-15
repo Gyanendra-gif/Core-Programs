@@ -11,7 +11,7 @@ logging.basicConfig(level=logging.DEBUG)
 def function_remove_tuple(my_list, item):
     """
     Description:
-        Function is Used to convert tuple from list 
+        Function is Used to remove item from tuple 
     Parameter:
         Sample Tuple
     Return:
