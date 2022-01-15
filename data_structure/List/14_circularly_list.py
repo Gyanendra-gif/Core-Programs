@@ -38,13 +38,12 @@ def function_circularly_list(listOne, listTwo):
                 pass
             else:
                 return False
-
         return True
     
     
 if __name__ == "__main__":
     sample_list_one = [1,2,3]
-    sample_list_two = [2,3,1]
+    sample_list_two = [2,3,1,3]
     result = function_circularly_list( sample_list_one, sample_list_two)
     logging.debug("Here the list {} and {} are {} circularly identical".format(sample_list_one, sample_list_two, result))
  
