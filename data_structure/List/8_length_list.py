@@ -26,5 +26,5 @@ def function_length_list(list, length):
 
 if __name__ == "__main__":
     sample_list = ["Gyanendra", "Sam", "Harry", "Tom", "Can"]
-    result = function_length_list(sample_list, 3)
+    result = function_length_list(sample_list, )
     logging.debug("Items have more then three word {} is {}".format(sample_list, result))
