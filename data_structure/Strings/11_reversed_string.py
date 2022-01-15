@@ -43,6 +43,6 @@ if __name__ == "__main__":
 
     sample_str = "Welcome to the Bridgelabz Program, Join to get a tech job"
     result = function_reversed_string(sample_str)
-    logger.info("Here is the count of occurence in {} of sub string is {} ".format(sample_str, result))
+    logger.info("Here is the reversed string of {} is {} ".format(sample_str, result))
  
   
