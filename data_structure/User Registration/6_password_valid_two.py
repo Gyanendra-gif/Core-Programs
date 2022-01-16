@@ -12,7 +12,8 @@ from logging_config import logger
 def function_password_validate(password):
     """
     Description:
-        Function is Used for Validating the Password of User 
+        Function is Used for Validating the Password of User with having Eight Characters and one
+        Upper
     Parameter:
         Sample String
     Return:
