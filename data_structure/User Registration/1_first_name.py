@@ -12,7 +12,8 @@ from logging_config import logger
 def function_name_validate(name):
     """
     Description:
-        Function is Used for Validating the First Name of User
+        Function is Used for Validating the First Name of User and will record the data on
+        log file
     Parameter:
         Sample String as Name
     Return:
@@ -23,7 +24,7 @@ def function_name_validate(name):
     if match:
         logger.info('First Name is Valid')
     else:
-        logger.error('Error! Last Name is Not Valid')
+        logger.error('Error! First Name is Not Valid')
 
 if __name__ == "__main__":
     user_name = input("Enter Your First Name to Check Validation: ")
