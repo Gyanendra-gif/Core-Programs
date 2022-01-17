@@ -21,7 +21,7 @@ def function_create_tuple(lst):
     return sample_tuple
 
 if __name__ == "__main__":
-    sample_list = [1,2,3,4,5,6,7, 'abc', 'xyz']
+    sample_list = [1,2,3,4,5,6,7.7,True, 'abc', 'xyz']
     result = function_create_tuple(sample_list)
     logging.debug("Here is the created tuple from list {} is {}".format(sample_list, result))
  
