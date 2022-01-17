@@ -25,5 +25,5 @@ def function_repeated_tuple(tup, item):
 if __name__ == "__main__":
     sample_tuple = (1,2,3,4,5,6,7,2,1)
     result = function_repeated_tuple(sample_tuple, 10)
-    logging.debug("The Item in the tuple {} is available {}".format(sample_tuple, result))
+    logging.debug("The Item 10 in the tuple {} is available {}".format(sample_tuple, result))
   
